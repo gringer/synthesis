@@ -1,0 +1,21 @@
+"PeptideCount","Description","Options"
+2,"Can increase chemical complexity within 2 spaces by up to 3",C
+2,"Create any peptide"
+3,"Break an opponent's protein"
+2,"Exchange one peptide for another within 3 spaces",C
+4,"The spark of life. All other players have one more turn"
+2,"Break a peptide up into any number of valid component chemicals"
+2,"Move a protein up to 2 spaces"
+3,"Move a chemical or peptide up to 3 spaces"
+2,"Use any chemical in the place of a peptide [cannot be used to create life]"
+2,"Place a chemical of any complexity anywhere on the board"
+3,"Reduce the complexity of one chemical to increase the complexity of two adjacent chemicals by 2"
+2,"Reduce the complexity required to make a peptide by 1"
+3,"Reduce the complexity required to make a peptide by up to 3"
+2,"Break up one of your own proteins",0
+3,"Increase the number of protein recipes by 1",C
+3,"Increase your available reaction surfaces by 2",C
+3,"Double the number of actions you can use in one turn"
+3,"Destroy this protein to break up any proteins within one space",D
+3,"Double the energy output of another completed protein"
+3,"Destroy this protein to place three chemicals of any complexity adjacent to each other anywhere on the board",D
