@@ -49,10 +49,12 @@ wrapper <- function(x, ...){ ## https://stackoverflow.com/a/3935429/3389895
 
 primes <- c(2,3,5,7,11,13,17,19);
 
-card.data <- read.csv("cardData.csv");
+card.data <- read.csv("cardData.csv", stringsAsFactors=FALSE);
+card.cost <- c(0,1,3,7);
+card.power <- c(0,2,5,10);
 
 pdf("synthesis_cards.pdf", width=210/25.4, height=297/25.4);
-for(page in 1:ceiling(nrow(card.data) / 12)){
+for(page in rep(1:ceiling(nrow(card.data) / 12), 2)){
     grid.newpage()
     pushViewport(viewport(layout=grid.layout(nrow=4, ncol=3), width=0.95, height=0.95));
     for(cNum in ((page-1)*12):((page-1)*12+11)){
@@ -68,10 +70,18 @@ for(page in 1:ceiling(nrow(card.data) / 12)){
         grid.text(pep.str, x=0.1, y=0.95, just="left");
         grid.text(wrapper(card.data$Description[cNum+1], 30),
                   x=0.1, y=0.85, just=c("left","top"));
+        grid.text(sprintf("%d/%d", card.cost[card.length],
+                          card.power[card.length]),
+                  x=0.95, y=0.95, just="right");
+        if(card.data$Options[cNum+1] != ""){
+            grid.text(paste(unlist(strsplit(card.data$Options[cNum+1],"")),
+                            collapse="/"),
+                      x=0.95, y=0.05, just="right");
+        }
         numRows <- trunc(card.length / 2 + 0.5);
         numCols <- ceiling(card.length / numRows);
         pushViewport(viewport(layout=grid.layout(nrow=numRows, ncol=numCols),
-                              width=0.9, height=0.4, x=0.5, y=0.25));
+                              width=0.7, height=0.4, x=0.5, y=0.25));
         for(pnum in 0:(card.length-1)){
             lCol <- pnum%%numCols+1;
             lRow <- trunc(pnum/numCols) + 1;
