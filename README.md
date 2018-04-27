@@ -1,3 +1,8 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
 # Synthesis -- The Synthetic Board Game
 
 We live in a world where proteins are all around us. Life is teeming with possibilities, and we have become magical machines that can manipulate chemistry and physics with atomic precision.
@@ -6,7 +11,9 @@ But what if you had nothing to work with? What if you had to start from scratch?
 
 ## Synopsis
 
-Synthesis is an abstract board game with the goal of creating the spark of life. The world starts off almost completely empty, with a scattering of basic chemicals. Chemicals can increase in complexity, and be combined together to create peptides. Peptides can be combined together to create proteins.
+Time: approx 60 mins
+
+Synthesis is an game with the goal of creating the spark of life. The world starts off almost completely empty, with a scattering of basic chemicals. Chemicals can increase in complexity, and be combined together to create peptides. Peptides can be combined together to create proteins.
 
 And proteins...? Proteins make synthesis easier. Proteins give you power. Proteins are, quite literally, a game changer.
 
@@ -25,16 +32,15 @@ You will need:
 ## Game Setup
 
 1. Assemble the game board by joining the two sides together at their longest edge
-2. Drop three [**1**] chemicals and three [**2**] chemicals for each player onto the centre of the board from a height of 30cm, and place them in the centre of the nearest hex. If they end up outside the board area, place them on the nearest hex on the edge of the board.
-3. Place the power counters on position 1 -- everyone starts with 1 power, use it wisely!
+2. Drop three [**1**] chemicals and three [**2**] chemicals onto the centre of the board from a height of 30cm, and place them in the centre of the nearest hex. If they end up outside the board area, place them on the nearest hex on the edge of the board.
+3. Place the player counters on position 1 of the power track -- everyone starts with 1 power, use it responsibly!
 4. Shuffle the protein cards and deal ***four*** out beside the game board.
 5. Place one "Spark of life" card for each player beside the game board.
 4. The person who last ate soup starts the game.
 
 ## Game Play
 
-Each player, in turn, carries out ***four*** of the following actions. The same action may be 
-repeated more than once:
+Each player, in turn, carries out ***four*** of the following actions. Passing is not permitted. The same action may be repeated more than once:
 
  * Place the lowest complexity chemical [**1**] in a blank space on the board.
  * Increase the complexity of a chemical on the board.
@@ -42,15 +48,16 @@ repeated more than once:
  * Convert all chemicals on a hex space into a peptide.
  * Move a peptide one hex space.
  * Use power to create a reaction surface, starting with an existing peptide.
- * Extend a reaction surface with the next peptide in the chain.
- * Break up a protein into its component peptides.
+ * Extend an incomplete protein with the next peptide in the chain.
+ * Break up one of your own proteins into its component peptides.
  * Use the power on a protein card. See section "Proteins" below.
+ * Discard all cards in the protein display, and draw ***four*** new cards.
  
 The game ends one round after the first person completes a "Spark of Life" protein. The winner of the game is the person who has the most power at the end of the game.
 
 ## Proteins
 
-*"What you must learn is that these rules are no different than the rules of a computer system...some of them can be bent. Others... can be broken."* - Morpheus, The Matrix
+*"What you must learn is that these rules are no different than the rules of a computer system... some of them can be bent. Others... can be broken."* - Morpheus, The Matrix
 
 Proteins give *Synthesis* its life, and a complexity that increases as the game progresses. The rules of the game can be changed by proteins.
 
